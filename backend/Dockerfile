@@ -5,7 +5,8 @@ WORKDIR /app
 # Cache dependencies
 COPY pom.xml .
 COPY src ./src
-COPY ml/models/model.json ./src/main/resources/model.json
+COPY pom.xml .
+COPY src ./src
 
 # Build production jar
 RUN mvn clean package -DskipTests
