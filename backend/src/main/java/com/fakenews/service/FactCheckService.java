@@ -41,11 +41,15 @@ public class FactCheckService {
     private static final Logger logger = LoggerFactory.getLogger(FactCheckService.class);
 
     // Edit this list to change which outlets count as "credible".
-    private static final List<String> TRUSTED_DOMAINS = List.of(
-            "indianexpress.com", "thehindu.com", "ptinews.com", "hindustantimes.com",
-            "ndtv.com", "timesofindia.indiatimes.com", "livemint.com", "theprint.in",
-            "deccanherald.com", "business-standard.com", "reuters.com", "apnews.com",
-            "bbc.com", "bbc.co.uk", "aljazeera.com", "theguardian.com");
+        private static final List<String> TRUSTED_DOMAINS = List.of(
+            "indianexpress.com", "thehindu.com", "thehindubusinessline.com", "ptinews.com",
+            "hindustantimes.com", "ndtv.com", "timesofindia.indiatimes.com",
+            "economictimes.indiatimes.com", "tribuneindia.com", "livemint.com",
+            "financialexpress.com", "business-standard.com", "theprint.in",
+            "deccanherald.com", "telegraphindia.com", "moneycontrol.com",
+            "reuters.com", "apnews.com", "bbc.com", "bbc.co.uk",
+            "aljazeera.com", "theguardian.com",
+            "rbi.org.in", "pib.gov.in");
 
     private static final List<String> FALSE_WORDS = List.of(
             "false", "fake", "incorrect", "misleading", "fabricated", "hoax", "pants on fire",
