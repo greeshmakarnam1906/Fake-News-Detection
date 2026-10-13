@@ -88,6 +88,7 @@ public class SecurityConfig {
                         // Public Auth Endpoints
                         .requestMatchers("/api/auth/**").permitAll()
                         // Public Health & Swagger Endpoints
+                        .requestMatchers(HttpMethod.GET, "/").permitAll()
                         .requestMatchers("/actuator/health", "/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
                         // Analysis Submission: Anyone can submit news text; authenticated users have their history saved
                         .requestMatchers(HttpMethod.POST, "/api/analyses").permitAll()
