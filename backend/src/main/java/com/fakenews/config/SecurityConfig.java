@@ -91,6 +91,8 @@ public class SecurityConfig {
                         .requestMatchers("/actuator/health", "/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
                         // Analysis Submission: Anyone can submit news text; authenticated users have their history saved
                         .requestMatchers(HttpMethod.POST, "/api/analyses").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/analyses").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/verify").permitAll()          
                         // History & Dashboard: strictly authenticated
                         .requestMatchers("/api/analyses/**").authenticated()
                         .requestMatchers("/api/dashboard/**").authenticated()
