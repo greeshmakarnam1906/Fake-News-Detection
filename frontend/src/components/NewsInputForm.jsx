@@ -3,8 +3,8 @@ import { Send, Sparkles, RotateCcw, AlertCircle, Link as LinkIcon, FileText, Tag
 
 const SAMPLE_ARTICLES = [
   {
-    headline: "NASA Mars Rover Unveils Ancient Riverbed Core Samples",
-    text: "Scientists at the Jet Propulsion Laboratory confirmed that the Perseverance rover successfully drilled and cached core rock samples from an ancient river delta on Mars. Geologists report sedimentary textures indicating sustained liquid water flowed for extended epochs, providing prime candidates for future laboratory biosignature investigation upon sample return.",
+    headline: "NASA Officials Announce Mars Rover Results, Lawmakers To Review Cost",
+    text: "NASA officials said on Tuesday that the agency would hold a press conference to announce results from the Perseverance rover mission. Scientists at the Jet Propulsion Laboratory said the rover collected core samples from an ancient river delta on Mars. Officials said the samples would be returned to Earth under a plan approved by Congress, and critics said the cost of the program was too high.",
     sourceUrl: "https://nasa.gov/missions/mars-2020-perseverance",
     category: "Science & Health"
   },
