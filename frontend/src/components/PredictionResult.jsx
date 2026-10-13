@@ -2,6 +2,7 @@ import React from 'react';
 import ConfidenceIndicator from './ConfidenceIndicator';
 import VerificationChecklist from './VerificationChecklist';
 import { ShieldCheck, AlertTriangle, AlertOctagon, HelpCircle, ArrowRight, RotateCcw, Cpu, FileText } from 'lucide-react';
+import EvidencePanel from './EvidencePanel';
 
 export default function PredictionResult({ result, onAnalyzeAnother }) {
   if (!result) return null;
@@ -164,7 +165,8 @@ export default function PredictionResult({ result, onAnalyzeAnother }) {
           ))}
         </ul>
       </div>
-
+      <EvidencePanel headline={result.headline} text={result.text} />
+      <VerificationChecklist actions={verificationActions} />
       {/* Verification Checklist */}
       <VerificationChecklist actions={verificationActions} />
 
